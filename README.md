@@ -1,4 +1,6 @@
-# GrabAIforSEA
+# GrabAIforSEA (Traffic Mangement)
+
+**Numpy, pandas, matplotlib.pyplot, pmdarima, statsmodels NEEDED.
 
 This is a time series problem and this challenge is done by using Seasonal Auto Regressive Integrated Moving Average (SARIMA) model.
 There are more explanations and guides in the document.  I did some testing and the results will be in the document as well for viewing purpose.
