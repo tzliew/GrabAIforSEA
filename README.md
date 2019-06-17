@@ -1,7 +1,9 @@
 # GrabAIforSEA (Traffic Mangement)
 
-**Numpy, pandas, matplotlib.pyplot, pmdarima, statsmodels NEEDED.**
+**Numpy, pandas, matplotlib.pyplot, pmdarima, statsmodels NEEDED.**<br/>
 *Training.csv us too big to upload here in GitHub, so it is not included.*
+
+Since the traffic demand for the following time will be affected by the previous traffic demand and traffic is seasonal for every day (24 hours, 96 data in 15 min time interval), instead of judging by the position of the location, we forecast based on the historical data by using SARIMA model with 96 data lag. 
 
 This is a time series problem and this challenge is done by using Seasonal Auto Regressive Integrated Moving Average (SARIMA) model.
 There are more explanations and guides in the document.  I did some testing and the results will be in the document as well for viewing purpose.
