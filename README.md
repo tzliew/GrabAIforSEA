@@ -14,48 +14,33 @@ There are more explanations and guides in the document.  I did some testing and 
 
 2.There are some parts that to uncomment and comment out to focus, so that the testing can be done accordingly. (more explanation in the Jupyter notebook for the code)
 
-A)
+A)<br />
+\# comment out this when doing testing<br />
+final_test = grabData(separated_data[geohash6[3]],100,4)<br />
+stationarity = stationarity(final_test)<br />
 
-\# comment out this when doing testing
+\# uncomment it when doing testing<br />
+\# final_test = grabDataTesting(separated_data["geohash6--Name"])<br />
+\# stationarity = stationarity(final_test)<br />
 
+B)<br />
+\# comment out this for testing<br />
 final_test = grabData(separated_data[geohash6[3]],100,4)
 
-stationarity = stationarity(final_test)
+\# ---------------------------uncomment this for testing-------------------<br />
+\# second parameter is suggested to be 4 continuos day to predict the next 5 interval<br />
+\# final_test = grabDataTesting(separated_data[geohash6[3]],4)<br />
 
-\# uncomment it when doing testing
+C)<br />
+\# comment out this for testing<br />
+plt.plot(grabData(separated_data[geohash6[3]],100,5)[:-91])<br />
 
-\# final_test = grabDataTesting(separated_data["geohash6--Name"])
-
-\# stationarity = stationarity(final_test)
-
-B)
-
-\# comment out this for testing
-
-final_test = grabData(separated_data[geohash6[3]],100,4)
-
-\# ---------------------------uncomment this for testing-------------------
-
-\# second parameter is suggested to be 4 continuos day to predict the next 5 interval
-
-\# final_test = grabDataTesting(separated_data[geohash6[3]],4)
-
-C)
-
-\# comment out this for testing
-
-plt.plot(grabData(separated_data[geohash6[3]],100,5)[:-91])
-
-\# uncomment this for testing
-
+\# uncomment this for testing<br />
 \# plt.plot(grabDataTesting(separated_data[geohash6[3]],4))
 
-D)
-
-\# comment out this for testing
-
+D)<br />
+\# comment out this for testing<br />
 RMSE = np.sum((final_demand.as_matrix() - grabData(separated_data[geohash6[3]],100,5)[-96:-91].values.reshape(-1))**2)/len(final_demand)
 
-\# uncomment this for testing
-
+\# uncomment this for testing<br />
 \# RMSE = np.sum((final_demand.as_matrix() - grabDataTesting(separated_data[geohash6[3]],4)[-96:-91].values.reshape(-1))**2)/len(final_demand)*
