@@ -7,8 +7,9 @@ There are more explanations and guides in the document.  I did some testing and 
 
 1.Change the “training.csv” to the correct path of the “test.csv”. Run every row in Jupyter Notebook and it will automatically tidy up the data format to match with my program.
 
-**Note: For testing in "training.csv", after pointing to the correct file, simply run all the code and this program will show all the related results. **
-** By default it is grabData(separated_data[geohash6[3]],100,4), which location = geohash6[3], start from time_order 100 and continuous fir 4 days, meaning 100+(4*96) = 484, it predicts the demand of 485 - 489 time_order.**
+**Note: For testing in "training.csv", after pointing to the correct file, simply run all the code and this program will show all the related results.**
+
+**By default it is grabData(separated_data[geohash6[3]],100,4), which location = geohash6[3], start from time_order 100 and continuous fir 4 days, meaning 100+(4*96) = 484, it predicts the demand of 485 - 489 time_order.**
 
 2.There are some parts that to uncomment and comment out to focus, so that the testing can be done accordingly. (more explanation in the Jupyter notebook for the code)
 
